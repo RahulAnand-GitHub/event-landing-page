@@ -11,8 +11,11 @@ interface RegistrationData {
 
 export async function submitRegistration(data: RegistrationData) {
   try {
-    // Direct call to Google Apps Script
     const scriptURL = process.env.GOOGLE_SHEET_WEB_URL
+
+    if (!scriptURL) {
+      throw new Error('GOOGLE_SHEET_WEB_URL is not defined')
+    }
 
     const response = await fetch(scriptURL, {
       method: 'POST',
@@ -23,7 +26,6 @@ export async function submitRegistration(data: RegistrationData) {
       redirect: 'follow',
     })
 
-    // Delay
     await new Promise((resolve) => setTimeout(resolve, 1000))
 
     return { success: true }
