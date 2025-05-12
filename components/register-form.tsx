@@ -289,10 +289,6 @@ export default function RegisterForm() {
                       <option>2nd Year</option>
                       <option>3rd Year</option>
                       <option>4th Year</option>
-                      <option>5th Year</option>
-                      <option>6th Year</option>
-                      <option>7th Year</option>
-                      <option>8th Year</option>
                     </select>
                     {errors.year && (
                       <label className="label">
