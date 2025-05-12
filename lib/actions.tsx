@@ -14,7 +14,7 @@ export async function submitRegistration(data: RegistrationData) {
     // Direct call to Google Apps Script
     const scriptURL = process.env.GOOGLE_SHEET_WEB_URL
 
-    const response = await fetch(scriptURL, {
+    const response = await fetch(scriptURL as any, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
