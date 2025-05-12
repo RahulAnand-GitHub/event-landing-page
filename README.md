@@ -1,6 +1,6 @@
-# Tech Horizons Event Landing Page
+# Event Landing Page
 
-A modern, responsive event landing page built with Next.js and Tailwind CSS for the "Tech Horizons 2025" software development engineering webinar. This project features a sleek design with dark mode support, interactive components, and Google Sheets integration for registration data.
+A modern, responsive event landing page built with Next.js and Tailwind CSS for the "Campus Code 2025" software development engineering webinar. This project features a sleek design with dark mode support, interactive components, and Google Sheets integration for registration data.
 
 ## 🌟 Features
 
